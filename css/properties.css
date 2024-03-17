@@ -71,27 +71,34 @@ footer {
         transition: transform 0.3s ease-in-out;
     }
 
-    /* Hide the nav links initially */
-    .nav-links {
-        display: none;
-
+    /* Increase size of arrow and add spacing */
+    .nav-toggle {
+        margin-top: 10px;
+        /* Add spacing between logo and arrow */
     }
 
-    /* Style for arrow down icon */
-    .arrow-down {
+    /* Style for arrow icons */
+    .arrow-down,
+    .arrow-up {
         display: block;
         width: 0;
         height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 6px solid black;
+        border-left: 10px solid transparent;
+        /* Increase size of arrow */
+        border-right: 10px solid transparent;
+        /* Increase size of arrow */
+        border-top: 10px solid black;
+        /* Increase size of arrow */
         margin: 0 auto;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.3s ease;
+        /* Add transition for smooth rotation */
     }
 
-    /* Style for arrow up icon */
+    /* Style for arrow-up icon */
     .arrow-up {
         display: none;
+        transform: rotate(180deg);
+        /* Initially rotate arrow up */
     }
 
     .nav-but {

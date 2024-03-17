@@ -53,9 +53,10 @@
     .image-gallery img {
         width: 100%;
         margin: 10px 0;
+        height: auto;
     }
     
     .main p {
-        font-size: 14px;
+        font-size: 17px;
     }
 }

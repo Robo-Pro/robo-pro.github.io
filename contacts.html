@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/properties.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>RoboPro</title>
+</head>
+<body>
+  <div class="nav">
+    <fieldset>
+        <legend><a href="index.html"><img src="images/logo.png" draggable="false" height="50px"></a></legend>
+        <div class="nav-toggle">
+            <span class="arrow-down"></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-but">Начало</a>
+            <a href="competition.html" class="nav-but">Състезания</a>
+            <a href="aboutus.html" class="nav-but">За нас</a>
+            <a href="history.html" class="nav-but">История</a>
+            <a href="contacts.html" class="nav-but">Контакти</a>
+        </div>
+    </fieldset>
+</div>
+    <div class="main">
+        <div class="container">
+            <div class="contact-form">
+              <h2>Свържете се с нас</h2>
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="d80a60b5-94cb-44df-9823-7c61a5141213">
+                <input type="text" name="name" placeholder="Име и фамилия" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Вашето съобщение" required></textarea>
+                <input type="submit" value="Изпрати">
+                <input type="hidden" name="redirect" value="http://127.0.0.1:5500/contacts.html">
+              </form>
+            </div>
+            <div class="social-links">
+              <h2>Последвайте ни:</h2>
+              <div class="links">
+                <a class="link-label" target="_blank" href="https://www.facebook.com/RoboProfessionals"><img src="images/facebook.png" alt="Facebook"><span class="space">Нашата Facebook страница!</span></a>
+                <a class="link-label" target="_blank" href="https://www.instagram.com/_robopro06_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/instagram.png" alt="Instagram"><span class="space">Нашият Instagram профил!</span></a>
+                <a class="link-label" target="_blank" href="https://www.youtube.com/@robopro2006"><img src="images/youtube.png" alt="YouTube"><span class="space">Нашият YouTube канал!</span></a>
+              </div>
+              
+            </div>
+          </div>
+          
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy;2024 RoboPro All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+        $(document).ready(function(){
+    $('.nav-toggle').click(function(){
+        $(this).toggleClass('active'); // Toggle active class on nav-toggle
+    });
+});
+
+    </script>
+</body>
+</html>

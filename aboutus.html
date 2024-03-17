@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/properties.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>RoboPro</title>
+</head>
+<body>
+  <div class="nav">
+    <fieldset>
+        <legend><a href="index.html"><img src="images/logo.png" draggable="false" height="50px"></a></legend>
+        <div class="nav-toggle">
+            <span class="arrow-down"></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-but">Начало</a>
+            <a href="competition.html" class="nav-but">Състезания</a>
+            <a href="aboutus.html" class="nav-but">За нас</a>
+            <a href="history.html" class="nav-but">История</a>
+            <a href="contacts.html" class="nav-but">Контакти</a>
+        </div>
+    </fieldset>
+</div>
+    <div class="main">
+        <h1 class="header">Нашият отбор</h1>
+    </div>
+    <section class="team-members">
+        
+        <div class="card">
+          <img src="images/ivo.jpg" alt="Member 1">
+          <div class="card-info">
+            <h3>Ивайло Георгиев</h3>
+            <p>Той е 11В клас и изучава специалността - Компютърна техника и технологии. В свободното си време обича да гледа филми, да се разхожда с приятели, да програмира и да пътува.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="images/yoan.jpg" alt="Member 1">
+            <div class="card-info">
+              <h3>Йоан Антов</h3>
+              <p>Той е 11В клас и изучава специалността - Компютърна техника и технологии. В свободното си време играе на видеоигри, излиза с приятели и обича много да кара колело.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/deni.jpg" alt="Member 1">
+            <div class="card-info">
+              <h3>Денис Такев</h3>
+              <p>Tой е 11В клас и изучава специалността - Компютърна техника и технологии. В свободното си време играе на видеоигри, ходи на фитнес и рисува.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/mitko.jpg" alt="Member 1">
+            <div class="card-info">
+              <h3>Митко Мирославов</h3>
+              <p>Той е 11В клас и изучава специалността - Компютърна техника и технологии. В свободното си време разглежда техника, играе Genshin Impact или следи компаниите Tesla и Apple. Той често излиза с приятели или прекарва време със семейството си.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/vladi.jpg" alt="Member 1">
+            <div class="card-info">
+              <h3>Владимир Илиев</h3>
+              <p>Той е 11В клас и изучава специалността - Компютърна техника и технологии. В свободното си време се занимава с автомобили и кара скейтборд.</p>
+            </div>
+          </div>
+      </section>
+    <h1 class="header">Нашите ментори</h1>
+      <section class="mentors">
+        
+        <div class="card">
+          <img src="images/desi.png" alt="Mentor 1">
+          <div class="card-info">
+            <h3>Десислава Цокова</h3>
+            <p>Тя е заместник-директор по учебно - производствена дейност (инж. Цокова вижда и чува всичко… Шшт! Идва!). Честно казано тя е добър човек стига само да не я ядосваме.</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="images/svetli.png" alt="Mentor 1">
+            <div class="card-info">
+              <h3>Светослав Иванов</h3>
+              <p>Той е учител по информационни технологии и програмиране. Той е фен на клавиатурите. (Може да го видите всеки ден с различна кола както и да ги продава на всеки 2-3 месеца. Но е най-голям фен на BMW). Ако искате да го призовете трябва да си купите BMW. </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/krisg.png" alt="Mentor 1">
+            <div class="card-info">
+              <h3>Кристиан Георгиев</h3>
+              <p>Той е ученик във 12 клас, бивш капитан на старият отбор FourBit. Вече и ментор, издигнат от инж. Десислава Цокова, поради неговата помощ през годините на новодошли отбори в клуба както и на стари ветерани също. Той е единствения участник от клуба, който е най-добре запознат със самото състезание, а и има най-много опит от всички.(Интересен факт за него е, че най-добрия играч на играта OSU!. Как знаем това? Хе-хе защото той е луд. )</p>
+            </div>
+          </div>
+      </section>
+    <div class="footer">
+        <footer>
+            <p>&copy;2024 RoboPro All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+      $(document).ready(function(){
+  $('.nav-toggle').click(function(){
+      $(this).toggleClass('active'); // Toggle active class on nav-toggle
+  });
+});
+  </script>
+</body>
+</html>

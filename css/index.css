@@ -1,0 +1,40 @@
+.timer{
+    background-color: #000051;
+    color: white;
+    padding: 2%;
+    margin-right: 2%;
+    border-radius: 11px;
+    text-align: center;
+}
+
+.time{
+    margin-top: 5%;
+    font-size: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .timer{
+        background-color: #000051;
+        color: white;
+        padding: 2%;
+        margin-right: 3%;
+        border-radius: 11px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .time{
+        font-size: 35px;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+    }
+    
+  }

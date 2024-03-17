@@ -1,0 +1,39 @@
+.team-members, .mentors {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 20px); /* Adjust as needed */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-info {
+    padding: 20px;
+  }
+  
+  p{
+    text-align: justify;
+  }
+
+  @media (max-width: 767px) {
+    .card {
+      width: calc(100% - 20px); /* Adjust as needed */
+    }
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/properties.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>RoboPro</title>
+</head>
+<body>
+    <div class="nav">
+        <fieldset>
+            <legend><a href="index.html"><img src="images/logo.png" draggable="false" height="50px"></a></legend>
+            <div class="nav-toggle">
+                <span class="arrow-down"></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-but">Начало</a>
+                <a href="competition.html" class="nav-but">Състезания</a>
+                <a href="aboutus.html" class="nav-but">За нас</a>
+                <a href="history.html" class="nav-but">История</a>
+                <a href="contacts.html" class="nav-but">Контакти</a>
+            </div>
+        </fieldset>
+    </div>
+    <div class="main">
+        <h1 class="header">Предстоящи събития:</h1>
+        <div>
+            <h2 class="header">Състезание "Роботика за България"</h2>
+            <h2 class="header">15 юни 2024</h2>
+            <div class="time">
+                <p class="timer" id="days"></p>
+                <p class="timer" id="hours"></p>
+                <p class="timer" id="minutes"></p>
+                <p class="timer" id="seconds"></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <p>&copy;2024 RoboPro All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+    $('.nav-toggle').click(function(){
+        $(this).toggleClass('active'); // Toggle active class on nav-toggle
+    });
+});
+    </script>
+</body>
+</html>

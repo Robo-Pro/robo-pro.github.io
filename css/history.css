@@ -1,0 +1,130 @@
+.main {
+    padding: 20px;
+}
+
+.text {
+    text-align: justify;
+    margin-top: 20px;
+    text-indent: 3%;
+}
+
+.image {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 1%;
+    box-sizing: border-box; /* Ensure padding doesn't exceed the defined width */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align vertically */
+    text-align: center; /* Center align the text */
+    height: 100%; /* Ensure the card body takes full height */
+}
+
+.after-cards-section {
+    margin-top: 40px;
+}
+
+.photo-gallery {
+    margin-top: 20px;
+}
+
+.photo-gallery .header {
+    margin-bottom: 10px;
+    color: #000051;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the photos horizontally */
+    margin-top: 10px;
+}
+
+.photos img {
+    width: calc(50% - 20px); /* Adjust as needed */
+    margin: 10px; /* Add margin around each photo */
+    object-fit: cover; /* Ensure photos maintain aspect ratio */
+    
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .text {
+        margin-top: 10px;
+        text-indent: 0; /* Remove text indent for better readability */
+    }
+
+    .image {
+        width: 100%; /* Make images occupy full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .row {
+        display: block; /* Stack columns vertically */
+    }
+
+    .column {
+        width: 100%; /* Make columns occupy full width */
+        padding: 0; /* Remove padding */
+    }
+
+    .card {
+        margin-bottom: 10px; /* Adjust margin between cards */
+    }
+
+    .card-img-top {
+        width: 100%; /* Make images occupy full width */
+    }
+
+    .card-title {
+        font-size: 18px; /* Reduce font size for better fit */
+    }
+
+    .after-cards-section .text {
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .photo-gallery .photos img {
+        width: 90%; /* Adjust image width for better fit */
+    }
+}

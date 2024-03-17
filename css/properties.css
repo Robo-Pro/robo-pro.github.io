@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    font-family: 'Nunito';
+    color: #000051;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    border: solid black 2px;
+    border-radius: 19px;
+    width: 85%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-but {
+    margin-right: 2%;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.nav-but:hover {
+    font-size: 19.1px;
+    text-shadow: #000051 0px 0px 0px;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+
+/* Media query for small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        /* Hide nav links by default */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Show arrow down when nav is collapsed */
+    .nav-toggle .arrow-down {
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hide arrow up when nav is collapsed */
+    .nav-toggle .arrow-up {
+        display: none;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Show nav links when nav is expanded */
+    .nav-toggle.active+.nav-links {
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Hide the nav links initially */
+    .nav-links {
+        display: none;
+
+    }
+
+    /* Style for arrow down icon */
+    .arrow-down {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid black;
+        margin: 0 auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Style for arrow up icon */
+    .arrow-up {
+        display: none;
+    }
+
+    .nav-but {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+}

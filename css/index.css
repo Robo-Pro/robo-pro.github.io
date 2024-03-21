@@ -29,7 +29,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin:auto;
+        margin: auto;
     }
     
     .time{
@@ -38,7 +38,7 @@
         font-weight: bold;
         align-items: center;
         justify-content: center;
-        
+        margin: auto;
     }
     
   }

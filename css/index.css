@@ -1,3 +1,11 @@
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .timer{
     background-color: #000051;
     color: white;
